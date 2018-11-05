@@ -3,9 +3,10 @@
 int main(void) 
 {
 	int i,j;
-	for(i=0;i<5;i++){
+	int n=8;
+	for(i=0;i<n;i++){
 		// ฐ๘น้ 
-		for(j=0;j<5-i;j++){
+		for(j=0;j<n-i;j++){
 			printf(" ");
 		}
 		
