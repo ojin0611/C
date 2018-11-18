@@ -3,6 +3,7 @@ learning the basic of C Programming Language
 - 2018-2 컴퓨터프로그래밍개론
 
 --------------
+- study
 
 1. 프로그래밍 시작하기
 
@@ -16,4 +17,4 @@ learning the basic of C Programming Language
 
 6. 배열의 선언과 사용
 
-7. 메모리와 
+7. 메모리와 포인터
