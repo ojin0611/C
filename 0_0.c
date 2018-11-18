@@ -1,22 +1,17 @@
 #include <stdio.h>
+void main(){
+	
+	int num=10;
+	int tmp;
+	tmp = &num;
+	int* pointer_num=&num; // num의 주소를 저장한 변수 
+	
+	printf("tmp = &num;의 결과 tmp : %d\n",tmp);
+	
+	printf("num : %d\n",num);
+	printf("num의 주소 : %d\n",&num);
+	printf("pointer_num : %d\n",*pointer_num);
 
-void countfunc();
-int count=30;
-
-int main(void) {
-	count=50;
-	printf("global change: %d\n",count);
-
-	int count=5;
-	count+=2;
-	countfunc();
-	countfunc();
-	countfunc();
-	printf("local change? : %d\n",count);
+	
 	return 0;
 }
-void countfunc(){
-	static int count;
-	count++;
-	printf("static : %d\n",count);
-}	
