@@ -1,22 +1,11 @@
 #include <stdio.h>
 #include <string.h>
+
 void swap_string(char* str1,char* str2){
-	char tmp[10]="";
-	int count = 0;
-	while( str1[count] ) {
-		*(tmp+count) = *(str1+count);
-		count++;
-	}
-	count = 0;
-	while( str2[count] ) {
-		*(str1+count) = *(str2+count);
-		count++;
-	}
-	count = 0;
-	while( str2[count] ) {
-		*(str2+count) = *(tmp+count);
-		count++;
-	}
+	char tmp[10];
+	strcpy(tmp,str1);
+	strcpy(str1,str2);
+	strcpy(str2,tmp);
 }
 
 void main( ){
