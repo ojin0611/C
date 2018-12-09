@@ -58,16 +58,16 @@ void sort(int* array, int count){
 
 void printMember(member members[], int count){
 	int i;
-	int ages[count];
+	int names[count];
 	for(i=0;i<count;i++){
-		ages[i]=members[i].age;
+		names[i]=members[i].name[0];
 	}
-	sort(ages,count);
+	sort(names,count);
 
 	int c=0;
 	while (c<count){
 		for(i=0;i<count;i++){
-			if(members[i].age==ages[c]){
+			if(members[i].name[0]==names[c]){
 				if(members[i].sex=='m')
 					printf("%s은 남자이고 %d살이다.\n",
 					members[i].name, members[i].age);
