@@ -14,7 +14,7 @@ void main(){
 	
 	// &,*은 서로 상쇄된다. 
 	printf("%x, %x, %x\n",ip,*ip,&ip);
-	printf("%x, %x, %x\n",&*&*&*ip,*&*&*&*ip,&*&ip);
+	printf("%x, %x, %x\n",&*&*&*ip,*&*&**&ip,&*&ip);
 	
 	return 0;
 }
